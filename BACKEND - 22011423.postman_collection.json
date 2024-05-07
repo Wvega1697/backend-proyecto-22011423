@@ -1,0 +1,710 @@
+{
+	"info": {
+		"_postman_id": "c66b3239-91f9-4775-825e-4c373fae0580",
+		"name": "BACKEND - 22011423",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "565970"
+	},
+	"item": [
+		{
+			"name": "getTasks",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mL5XpgYV4oBNBjTv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/tasks/getTasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"getTasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getTasks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/tasks/getTasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"getTasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "406"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"196-LvspTkc0ejrWi2XEkducgwaX2FE\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:44:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10691189763,\n        \"name\": \"Task 1: Actividad 3\",\n        \"description\": \"Crear repositorio para el backend.\",\n        \"dueDate\": \"2024-06-01T00:00:00.000Z\"\n    },\n    {\n        \"id\": 841566554191,\n        \"name\": \"Task 2: Actividad 3\",\n        \"description\": \"Crear el proyecto para el backend.\",\n        \"dueDate\": \"2024-06-15T00:00:00.000Z\"\n    },\n    {\n        \"id\": 274329677008,\n        \"name\": \"Task 3: Actividad 3\",\n        \"description\": \"Push y commit al repositorio.\",\n        \"dueDate\": \"2024-06-30T00:00:00.000Z\"\n    }\n]"
+				},
+				{
+					"name": "getTasks+addTask",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/tasks/getTasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"getTasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "515"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"203-Bfn51qVF3FQR3sgWKQ5Ac7iOAps\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:44:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 10691189763,\n        \"name\": \"Task 1: Actividad 3\",\n        \"description\": \"Crear repositorio para el backend.\",\n        \"dueDate\": \"2024-06-01T00:00:00.000Z\"\n    },\n    {\n        \"id\": 841566554191,\n        \"name\": \"Task 2: Actividad 3\",\n        \"description\": \"Crear el proyecto para el backend.\",\n        \"dueDate\": \"2024-06-15T00:00:00.000Z\"\n    },\n    {\n        \"id\": 274329677008,\n        \"name\": \"Task 3: Actividad 3\",\n        \"description\": \"Push y commit al repositorio.\",\n        \"dueDate\": \"2024-06-30T00:00:00.000Z\"\n    },\n    {\n        \"id\": 778904377840,\n        \"name\": \"Task 4: Actividad 3\",\n        \"description\": \"Probar los endpoints\",\n        \"dueDate\": \"2024-06-05\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addTask",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mL5XpgYV4oBNBjTv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Task 4: Actividad 3\",\r\n    \"description\": \"Probar los endpoints\",\r\n    \"dueDate\": \"2024-06-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/addTask",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"addTask"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addTask",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Task 4: Actividad 3\",\r\n    \"description\": \"Probar los endpoints\",\r\n    \"dueDate\": \"2024-06-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/addTask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"addTask"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "108"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"6c-ebzphEeb+Hiw+me0sMHyjC/DddQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:44:36 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 778904377840,\n    \"name\": \"Task 4: Actividad 3\",\n    \"description\": \"Probar los endpoints\",\n    \"dueDate\": \"2024-06-05\"\n}"
+				}
+			]
+		},
+		{
+			"name": "removeTask",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mL5XpgYV4oBNBjTv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/tasks/removeTask/778904377840",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"removeTask",
+						"778904377840"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "removeTask",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/tasks/removeTask/778904377840",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"removeTask",
+								"778904377840"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-gT7hwsAc9YXkHm/96vp3Du8RbAE\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:45:14 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Task removed\"\n}"
+				}
+			]
+		},
+		{
+			"name": "getGoals",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mL5XpgYV4oBNBjTv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/goals/getGoals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"goals",
+						"getGoals"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getGoals",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/goals/getGoals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goals",
+								"getGoals"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "388"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"184-csV3nrKJF1cHbMrWRyrtgWBWc6c\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:52:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 777734212888,\n        \"name\": \"Goal 1: Actividad 3\",\n        \"description\": \"Sacar 100 en la actividad 3.\",\n        \"dueDate\": \"2024-07-31T00:00:00.000Z\"\n    },\n    {\n        \"id\": 1523273929818,\n        \"name\": \"Goal 2: Actividad 3\",\n        \"description\": \"Sacar 100 en los examenes.\",\n        \"dueDate\": \"2024-08-31T00:00:00.000Z\"\n    },\n    {\n        \"id\": 1040979831226,\n        \"name\": \"Goal 3: Actividad 3\",\n        \"description\": \"Sacar 100 en el curso.\",\n        \"dueDate\": \"2024-09-30T00:00:00.000Z\"\n    }\n]"
+				},
+				{
+					"name": "getGoals+addGoal",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/goals/getGoals",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goals",
+								"getGoals"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "488"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1e8-hFpB5mr43/0pKDR0C+PKCFmSNgc\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:54:02 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1305464483874,\n        \"name\": \"Goal 1: Actividad 3\",\n        \"description\": \"Sacar 100 en la actividad 3.\",\n        \"dueDate\": \"2024-07-31T00:00:00.000Z\"\n    },\n    {\n        \"id\": 532452781774,\n        \"name\": \"Goal 2: Actividad 3\",\n        \"description\": \"Sacar 100 en los examenes.\",\n        \"dueDate\": \"2024-08-31T00:00:00.000Z\"\n    },\n    {\n        \"id\": 1505080423251,\n        \"name\": \"Goal 3: Actividad 3\",\n        \"description\": \"Sacar 100 en el curso.\",\n        \"dueDate\": \"2024-09-30T00:00:00.000Z\"\n    },\n    {\n        \"id\": 1091748475109,\n        \"name\": \"Goal 4: Actividad 3\",\n        \"description\": \"Graduarme.\",\n        \"dueDate\": \"2024-06-05\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "addGoal",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mL5XpgYV4oBNBjTv",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Goal 4: Actividad 3\",\r\n    \"description\": \"Graduarme.\",\r\n    \"dueDate\": \"2024-06-05\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/goals/addGoal",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"goals",
+						"addGoal"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "addGoal",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Goal 4: Actividad 3\",\r\n    \"description\": \"Graduarme.\",\r\n    \"dueDate\": \"2024-06-05\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/goals/addGoal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goals",
+								"addGoal"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "99"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"63-ANOxMnY7jiQYs+404KBeekT80Wk\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:53:55 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1091748475109,\n    \"name\": \"Goal 4: Actividad 3\",\n    \"description\": \"Graduarme.\",\n    \"dueDate\": \"2024-06-05\"\n}"
+				}
+			]
+		},
+		{
+			"name": "removeGoal",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "mL5XpgYV4oBNBjTv",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/goals/removeGoal/1091748475109",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"goals",
+						"removeGoal",
+						"1091748475109"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "removeGoal",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "mL5XpgYV4oBNBjTv",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/goals/removeGoal/1091748475109",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"goals",
+								"removeGoal",
+								"1091748475109"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "26"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1a-csPc7Chx4lrXLYa8ayc4pwycJ9o\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 07 May 2024 02:54:19 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Goal removed\"\n}"
+				}
+			]
+		}
+	]
+}
