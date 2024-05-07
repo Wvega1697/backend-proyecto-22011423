@@ -53,7 +53,7 @@ http://localhost:3000/
 * `tasks/removeTask/:index` - DELETE
 * `goals/removeGoal/:index` - DELETE
 
-Puedes exportar el archivo a Postman para facilitar las pruebas a los endpoints: [Uploading BACKEND - 22011423.postman_collection.json…]()
+Puedes exportar el archivo a Postman para facilitar las pruebas a los endpoints: [Postman File](https://github.com/Wvega1697/backend-proyecto-22011423/blob/main/BACKEND%20-%2022011423.postman_collection.json)
 
 
 ## API Key
