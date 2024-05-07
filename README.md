@@ -40,7 +40,7 @@ Una vez que hayas instalado las dependencias, puedes iniciar la aplicación con 
 npm start
 ```
 
-Este comando inicia un servidor de desarrollo en el puerto 3000. Usa los endpoint de la aplicación desde la terminarl o desde herramientas como Postmant o curl.
+Este comando inicia un servidor de desarrollo en el puerto 3000. Usa los endpoint de la aplicación desde la terminarl o desde herramientas como Postman o curl.
 
 ## Endpoints
 
@@ -52,6 +52,9 @@ http://localhost:3000/
 * `goals/addGoal` - POST
 * `tasks/removeTask/:index` - DELETE
 * `goals/removeGoal/:index` - DELETE
+
+Puedes exportar el archivo a Postman para facilitar las pruebas a los endpoints: [Uploading BACKEND - 22011423.postman_collection.json…]()
+
 
 ## API Key
 
