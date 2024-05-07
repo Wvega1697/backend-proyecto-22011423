@@ -15,9 +15,8 @@ router.post("/addTask", (req, res) => {
     return res.status(400).json({ error: "Missing required fields" });
   }
   const task = {
-    id: tasks.length,
-    ...req.body,
     id: Math.floor(Date.now() * Math.random()),
+    ...req.body,
   };
   tasks.push(task);
   res.json(task);

@@ -26,9 +26,8 @@ router.post("/addGoal", (req, res) => {
     return res.status(400).json({ error: "Missing required fields" });
   }
   const goal = {
-    id: goals.length,
-    ...req.body,
     id: Math.floor(Date.now() * Math.random()),
+    ...req.body,
   };
   goals.push(goal);
   res.json(goal);
