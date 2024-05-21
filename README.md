@@ -63,6 +63,8 @@ Recuerda agregar el API key `mL5XpgYV4oBNBjTv` en el header `Authorization` de c
 ## Imagenes
 ## Actividad 5
 
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/b63194a7-976e-4a1a-afcc-ebca9e80de27)
+
 ### Tasks
 
 ![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/492d5d57-c062-4a01-be00-534cdce290f7)
