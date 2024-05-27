@@ -1,6 +1,6 @@
-# Actividad 3 - 22011423
+# Actividad 5 - 22011423
 Williams Adolfo Vega Montenegro
-Actividad 3 - Curso "Desarrollo de Aplicaciones Web - Sección A"
+Actividad 5 - Curso "Desarrollo de Aplicaciones Web - Sección A"
 Backend en NodeJS + Express
 
 # Aplicación de Lista de Tareas y Metas Personales
@@ -59,3 +59,28 @@ Puedes exportar el archivo a Postman para facilitar las pruebas a los endpoints:
 ## API Key
 
 Recuerda agregar el API key `mL5XpgYV4oBNBjTv` en el header `Authorization` de cada request.
+
+## Imagenes
+## Actividad 5
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/b63194a7-976e-4a1a-afcc-ebca9e80de27)
+
+### Tasks
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/492d5d57-c062-4a01-be00-534cdce290f7)
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/2dec5073-2394-4d11-9a6e-9a4fdc6fbdc9)
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/effb6625-781e-43f2-98e4-4bad8e622651)
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/5b8a02d5-2bc3-4424-a49c-0fb7b29d3a88)
+
+### Goals
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/202982c5-ce9a-4410-9f77-228e433ea000)
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/a7f72b73-0d8c-4ea2-af7d-dd3f056ac74f)
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/e5e32065-241d-409f-871a-66376aa91e97)
+
+![image](https://github.com/Wvega1697/backend-proyecto-22011423/assets/20270532/20de281b-5416-47b6-b2f8-892483bd5cd7)
