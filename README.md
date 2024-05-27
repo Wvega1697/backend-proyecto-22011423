@@ -1,6 +1,6 @@
-# Actividad 5 - 22011423
+# Proyecto Final - 22011423
 Williams Adolfo Vega Montenegro
-Actividad 5 - Curso "Desarrollo de Aplicaciones Web - Sección A"
+Proyecto Final - Curso "Desarrollo de Aplicaciones Web - Sección A"
 Backend en NodeJS + Express
 
 # Aplicación de Lista de Tareas y Metas Personales
